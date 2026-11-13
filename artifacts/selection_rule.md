@@ -1,11 +1,11 @@
-# Selection rule for the final holdout
+# Quy tắc chọn cấu hình cho bộ test cuối
 
-The first test set and a second replacement test set were used in preliminary runs, reviewed, and set aside. Their questions, traces, and metrics are archived under `starter/benchmark/exploratory_superseded/`, `starter/results/exploratory_superseded/`, `starter/benchmark/exploratory_second/`, and `starter/results/exploratory_second/`. Neither is reported as the final holdout. The current test set is a third set fixed before its final run; prior test review still weakens the overall independence of this evaluation.
+Bộ test đầu tiên và bộ thay thế thứ hai đã được chạy thử, xem kết quả rồi lưu lại. Câu hỏi, trace và chỉ số của hai bộ này nằm tại `starter/benchmark/exploratory_superseded/`, `starter/results/exploratory_superseded/`, `starter/benchmark/exploratory_second/` và `starter/results/exploratory_second/`. Hai bộ này không được tính là holdout cuối. Bộ test hiện tại là bộ thứ ba, được cố định trước lần chạy cuối; việc đã xem hai bộ trước vẫn làm giảm tính độc lập của đánh giá.
 
-I fixed the following rule using the dev results only, before running the replacement test questions:
+Quy tắc được chốt dựa trên dev trước khi chạy bộ câu hỏi test thay thế:
 
-1. Choose the strategy with the highest dev Evidence Hit@3.
-2. Break a tie with dev Hit@1.
-3. If still tied, choose the simpler strategy without conditional filtering.
+1. Chọn cấu hình có Evidence Hit@3 trên dev cao nhất.
+2. Nếu hòa, chọn cấu hình có Hit@1 trên dev cao hơn.
+3. Nếu vẫn hòa, chọn cấu hình đơn giản hơn, không cần áp dụng filter theo từng câu.
 
-On the final recorded run, B has the highest dev Evidence Hit@3 (11/15), ahead of C (10/15) and A (7/15), so B is selected. A previous recorded run gave C 11/15; after rebuilding the Chroma HNSW index, C scored 10/15 on dev. The benchmark questions and strategy settings were unchanged. The cause of this run-to-run variation was not isolated; approximate-search variation is one possibility. It is recorded as a limitation of the one-run measurement. The third five-question test set in `starter/benchmark/questions.jsonl` is used for the final reported run. No chunk settings or model choices were changed after fixing that set.
+Trong lần chạy được báo cáo, B có Evidence Hit@3 trên dev cao nhất (11/15), tiếp theo là C (10/15) và A (7/15), nên chọn B. Một lần chạy trước đó cho C kết quả 11/15; sau khi dựng lại chỉ mục Chroma HNSW, C đạt 10/15 dù câu hỏi và cấu hình không đổi. Chưa xác định nguyên nhân; biến thiên của tìm kiếm gần đúng là một khả năng. Đây là giới hạn của phép đo chỉ chạy một lần. Bộ test năm câu hiện tại trong `starter/benchmark/questions.jsonl` được dùng cho kết quả cuối. Không thay đổi cấu hình sau khi chốt bộ này.
