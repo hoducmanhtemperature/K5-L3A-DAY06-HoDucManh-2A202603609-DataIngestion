@@ -5,4 +5,4 @@
 - Lớp: L3A
 - Chủ đề và corpus: The Federalist Papers, Project Gutenberg eBook #18
 - Repo bài nộp: https://github.com/hoducmanhtemperature/K5-L3A-DAY06-HoDucManh-2A202603609-DataIngestion
-- Commit chốt bài: ac7a95e502fd75917ecca5fdf98abd8578e203e4 (commit nội dung tiếng Việt; commit hiện tại chỉ ghi nhận mã này)
+- Commit chốt bài: 5c4b2f4091d7f3d328b2045d75d073c33e001333 (bản nộp tiếng Việt, kèm manifest và hướng dẫn tải corpus)

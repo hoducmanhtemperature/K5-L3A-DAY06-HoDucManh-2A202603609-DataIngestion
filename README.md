@@ -40,7 +40,7 @@ Bộ câu hỏi có 15 câu dev và 5 câu test tại `starter/benchmark/questio
 
 ### Chuẩn bị manifest và bộ câu hỏi
 
-Manifest và các đơn vị nguồn đã được tạo. Để tạo lại sau khi thay tệp nguồn, chạy từ thư mục `starter/`:
+Manifest đã được lưu trong repo; tệp nguồn và các đơn vị corpus được tải và tạo lại theo hướng dẫn bên dưới, không lưu trong Git:
 
 ```bash
 python scripts/prepare_gutenberg.py
