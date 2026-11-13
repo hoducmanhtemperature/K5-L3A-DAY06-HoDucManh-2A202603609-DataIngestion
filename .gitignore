@@ -11,3 +11,7 @@ __pycache__/
 
 # Regenerable local Chroma vector index
 starter/data/chroma/
+
+# Public source text and essay units are fetched/generated from the manifest instructions
+data/source/federalist-papers.txt
+starter/data/corpus/
