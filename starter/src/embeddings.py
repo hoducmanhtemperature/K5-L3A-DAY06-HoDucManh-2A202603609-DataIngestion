@@ -1,4 +1,4 @@
-"""Choose a real embedding provider (API or local) and implement this contract."""
+"""Sentence Transformers local embedding adapter (real model, no mock fallback)."""
 from typing import Protocol
 
 
@@ -16,14 +16,28 @@ class Embedder(Protocol):
 
 
 class MyEmbedder:
-    """TODO: implement a provider adapter; do not silently fall back to mock vectors."""
+    """Load a local Sentence Transformers model and expose a small stable contract."""
 
     def __init__(self, model_name: str) -> None:
+        try:
+            from sentence_transformers import SentenceTransformer
+        except ImportError as exc:
+            raise RuntimeError("Install sentence-transformers as described in README.md") from exc
         self.model_name = model_name
-        raise NotImplementedError("TODO: initialize real embedder and dimensions")
+        self._model = SentenceTransformer(model_name)
+        dimension_fn = getattr(self._model, "get_embedding_dimension", None)
+        if dimension_fn is None:
+            dimension_fn = self._model.get_sentence_embedding_dimension
+        self.dimensions = int(dimension_fn())
+        if not self.dimensions:
+            raise RuntimeError(f"Model did not report embedding dimensions: {model_name}")
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        raise NotImplementedError("TODO: embed_documents")
+        if not texts:
+            return []
+        vectors = self._model.encode(texts, normalize_embeddings=True, show_progress_bar=True)
+        return vectors.tolist()
 
     def embed_query(self, question: str) -> list[float]:
-        raise NotImplementedError("TODO: embed_query")
+        vector = self._model.encode([question], normalize_embeddings=True, show_progress_bar=False)[0]
+        return vector.tolist()

@@ -1,31 +1,31 @@
-# Starter · PostgreSQL + pgvector
+# Day 06 pipeline
 
-Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
+Pipeline hiện chạy với corpus Federalist Papers, Sentence Transformers local và Chroma persistent; không cần Docker hoặc API key. Các tệp PostgreSQL + pgvector được giữ làm phương án hạ tầng tham khảo, nhưng `src/run.py` hiện dùng Chroma.
 
 ## Cấu trúc
 
 ```text
 starter/
-├── docker-compose.yml     # PostgreSQL 16 + pgvector, chỉ mở cổng local
-├── init.sql               # bật extension khi tạo database mới
-├── requirements.txt       # psycopg, pypdf và python-dotenv
+├── docker-compose.yml     # phương án PostgreSQL tham khảo; không dùng trong run hiện tại
+├── init.sql               # cấu hình pgvector cho phương án tham khảo
+├── requirements.txt       # Chroma, Sentence Transformers, pypdf
 ├── .env.example           # cấu hình mẫu; copy thành .env
-├── scripts/check_setup.py # kiểm tra kết nối và extension (đã chạy được)
+├── scripts/prepare_gutenberg.py # tách essay units và tạo manifest
 ├── src/
 │   ├── models.py          # cấu trúc dữ liệu mẫu
-│   ├── ingestion.py       # TODO: đọc / chuẩn hóa tài liệu
-│   ├── chunking.py        # TODO: chia chunk
-│   ├── embeddings.py      # TODO: chọn model API hoặc local
-│   ├── store.py           # TODO: lưu vector, metadata và filter
-│   ├── evaluation.py      # TODO: chấm truy xuất, lưu trace
-│   └── run.py             # TODO: kết nối các bước thành pipeline
-├── data/                  # bạn tự chuẩn bị corpus được phép sử dụng
-└── results/               # lưu kết quả của bạn
+│   ├── ingestion.py       # PDF/text extraction and normalization
+│   ├── chunking.py        # fixed and paragraph chunking
+│   ├── embeddings.py      # local Sentence Transformers adapter
+│   ├── store.py           # persistent Chroma and PostgreSQL adapters
+│   ├── evaluation.py      # retrieval metrics and trace labels
+│   └── run.py             # A/B/C orchestration
+├── data/                  # source units, manifest, and persistent Chroma
+└── results/               # traces and measured metrics
 ```
 
-## 1. Cài và kiểm tra database
+## 1. Cài và chạy pipeline
 
-Cần Docker Desktop hoặc Docker Engine + Compose, Python **3.11–3.14**, và mạng để tải image/dependencies lần đầu. Các lệnh sau chạy từ thư mục `starter/`:
+Cần Python **3.11–3.13** và mạng để tải dependencies/model ở lần chạy đầu. Từ thư mục `starter/`:
 
 ```bash
 cd starter
@@ -35,31 +35,17 @@ python3 -m venv .venv
 Kích hoạt `.venv`: macOS/Linux dùng `source .venv/bin/activate`; Windows PowerShell dùng `.venv\Scripts\Activate.ps1`. Sau đó:
 
 ```bash
+# Install the CPU-only PyTorch wheel first to avoid CUDA packages on CPU machines.
+python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.7.1+cpu
 python -m pip install -r requirements.txt
-# macOS/Linux: cp .env.example .env
-# Windows PowerShell: Copy-Item .env.example .env
-docker compose -p day6_student_starter up -d --wait
-python scripts/check_setup.py
+python scripts/prepare_gutenberg.py
+python -m src.run
 ```
 
-Kỳ vọng: hiện tên database, phiên bản PostgreSQL và pgvector, sau đó `Setup OK`. Đây **chỉ là kiểm tra hạ tầng**, không phải kết quả benchmark. Docker dùng cổng `127.0.0.1:55433` và mật khẩu cố định **chỉ dùng local cho lab**; nếu cổng bận, sửa đồng thời port trong `docker-compose.yml` và `DATABASE_URL` trong `.env`. `init.sql` chỉ chạy khi volume mới được tạo; nếu database sẵn có chưa bật extension, xem log Docker và kiểm tra cấu hình thay vì xóa volume chứa dữ liệu.
+Model local mặc định là `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`; lần đầu sẽ tải model và có thể mất vài phút. Chroma dùng cosine HNSW và lưu tại `data/chroma`. Đổi model hoặc thư mục bằng `DAY6_EMBEDDING_MODEL` hoặc `DAY6_VECTOR_DIR`.
 
-Dừng container nhưng giữ dữ liệu:
+## Kết quả và audit
 
-```bash
-docker compose -p day6_student_starter stop
-```
-
-## 2. Chọn embedding model
-
-Điền key tương ứng trong `.env` nếu dùng OpenRouter, OpenAI hoặc Gemini; **không commit `.env`**. Model local không cần API key. `requirements.txt` chỉ có dependencies cơ bản: tự cài SDK hoặc thư viện local phù hợp với model bạn chọn và ghi lại version/lệnh cài trong báo cáo. Ghi tên model và số chiều; dùng cùng model cho toàn bộ chiến lược và vector query tương thích vector document.
-
-## 3. Hoàn thiện pipeline
-
-1. Đặt corpus vào `data/` hoặc cung cấp manifest/hướng dẫn truy cập. Đọc [GUIDE.md](../GUIDE.md) về **30 trang nội dung**, quyền dữ liệu và metadata.
-2. Hoàn thiện từng hàm TODO trong `src/`. Lưu ID tài liệu, nguồn, trang/vị trí và ít nhất một trường filter có ích.
-3. Xây ít nhất ba cấu hình; ví dụ A fixed-size, B theo đoạn, C như B nhưng có filter. Cần cùng corpus, model và benchmark; nạp lại không nhân đôi và xử lý chunk cũ khi dữ liệu đổi.
-4. Tự viết ít nhất 20 câu hỏi kèm evidence, tách dev/test trước khi thử theo [BENCHMARK.md](../BENCHMARK.md). Lưu trace top-3 và báo cáo đủ năm tiêu chí.
-5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
+Output vào `results/`: top-3 chunks, scores, metadata, Hit@1/Evidence Hit@3 per split, resource/timing, chunk-length percentile summaries, filter-compliance figures, and `ingestion_errors.json` (an empty list means no read/empty-page errors were found). The current audit labels are AI-assisted and not independently verified by the student; check the sampled coherence positions, all 5 test questions × top-3 metadata records, and grounding labels before submission as required by [GUIDE.md](../GUIDE.md). Grounding rates retrieved evidence, not LLM answer accuracy. Each rerun clears and rebuilds each strategy collection before upsert so obsolete chunks are removed if the corpus changes.
 
 Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.

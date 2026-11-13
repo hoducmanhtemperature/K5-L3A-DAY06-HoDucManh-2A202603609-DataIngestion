@@ -1,0 +1,50 @@
+[
+  {
+    "strategy": "A",
+    "chunk_count": 2620,
+    "total_chunk_chars": 1290239,
+    "mean_chunk_chars": 492.46,
+    "ingest_seconds_including_embeddings": 35.285,
+    "api_cost": 0,
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "dimensions": 384,
+    "model_load_seconds_this_run": 9.089,
+    "embedding_library_version": "5.7.0",
+    "torch_version": "2.7.1+cpu",
+    "vector_store_version": "1.5.9",
+    "python_version": "3.13.14",
+    "query_and_search_seconds": 0.273
+  },
+  {
+    "strategy": "B",
+    "chunk_count": 2082,
+    "total_chunk_chars": 1162635,
+    "mean_chunk_chars": 558.42,
+    "ingest_seconds_including_embeddings": 25.249,
+    "api_cost": 0,
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "dimensions": 384,
+    "model_load_seconds_this_run": 9.089,
+    "embedding_library_version": "5.7.0",
+    "torch_version": "2.7.1+cpu",
+    "vector_store_version": "1.5.9",
+    "python_version": "3.13.14",
+    "query_and_search_seconds": 0.285
+  },
+  {
+    "strategy": "C",
+    "chunk_count": 2082,
+    "total_chunk_chars": 1162635,
+    "mean_chunk_chars": 558.42,
+    "ingest_seconds_including_embeddings": 25.101,
+    "api_cost": 0,
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "dimensions": 384,
+    "model_load_seconds_this_run": 9.089,
+    "embedding_library_version": "5.7.0",
+    "torch_version": "2.7.1+cpu",
+    "vector_store_version": "1.5.9",
+    "python_version": "3.13.14",
+    "query_and_search_seconds": 0.293
+  }
+]

@@ -1,0 +1,1817 @@
+{
+  "title": "The Federalist Papers (Project Gutenberg eBook #18)",
+  "source_url": "https://www.gutenberg.org/ebooks/18",
+  "source_text_url": "https://www.gutenberg.org/cache/epub/18/pg18.txt",
+  "license_or_permission": "The original essays are public domain. Project Gutenberg's eBook notice states the text may be reused under the Project Gutenberg License and asks users outside the U.S. to verify local law.",
+  "accessed_at": "2026-11-13",
+  "source_sha256": "a6c9d1135a04d10955fe11d210b7f642e1c2341d4f2c8369b9a832cc97839d94",
+  "unit_rule": "One Federalist essay per source unit; line-wrapped paragraphs are reflowed; Unicode NFC normalization is applied by the ingestion pipeline when loaded, and paragraph boundaries retained. Each unit exceeds 1,500 characters. Unit sequence is preserved because the source has a duplicated No. LXX heading. The broad category field groups ranges by the essay titles in the source contents list and is intended only for coarse filtering.",
+  "documents": [
+    {
+      "document_id": "federalist-001-occurrence-1",
+      "path": "data/corpus/federalist-unit-001.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. I (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        1
+      ],
+      "content_chars": 9576,
+      "source_line_start": 127,
+      "source_line_end": 298,
+      "metadata": {
+        "paper_number": 1,
+        "heading_roman": "I",
+        "occurrence": 1,
+        "source_unit": 1,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-002-occurrence-1",
+      "path": "data/corpus/federalist-unit-002.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. II (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        2
+      ],
+      "content_chars": 10194,
+      "source_line_start": 299,
+      "source_line_end": 479,
+      "metadata": {
+        "paper_number": 2,
+        "heading_roman": "II",
+        "occurrence": 1,
+        "source_unit": 2,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-003-occurrence-1",
+      "path": "data/corpus/federalist-unit-003.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. III (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        3
+      ],
+      "content_chars": 8879,
+      "source_line_start": 480,
+      "source_line_end": 651,
+      "metadata": {
+        "paper_number": 3,
+        "heading_roman": "III",
+        "occurrence": 1,
+        "source_unit": 3,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-004-occurrence-1",
+      "path": "data/corpus/federalist-unit-004.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. IV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        4
+      ],
+      "content_chars": 9841,
+      "source_line_start": 652,
+      "source_line_end": 834,
+      "metadata": {
+        "paper_number": 4,
+        "heading_roman": "IV",
+        "occurrence": 1,
+        "source_unit": 4,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-005-occurrence-1",
+      "path": "data/corpus/federalist-unit-005.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. V (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        5
+      ],
+      "content_chars": 8392,
+      "source_line_start": 835,
+      "source_line_end": 990,
+      "metadata": {
+        "paper_number": 5,
+        "heading_roman": "V",
+        "occurrence": 1,
+        "source_unit": 5,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-006-occurrence-1",
+      "path": "data/corpus/federalist-unit-006.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. VI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        6
+      ],
+      "content_chars": 13751,
+      "source_line_start": 991,
+      "source_line_end": 1250,
+      "metadata": {
+        "paper_number": 6,
+        "heading_roman": "VI",
+        "occurrence": 1,
+        "source_unit": 6,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-007-occurrence-1",
+      "path": "data/corpus/federalist-unit-007.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. VII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        7
+      ],
+      "content_chars": 14208,
+      "source_line_start": 1251,
+      "source_line_end": 1490,
+      "metadata": {
+        "paper_number": 7,
+        "heading_roman": "VII",
+        "occurrence": 1,
+        "source_unit": 7,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-008-occurrence-1",
+      "path": "data/corpus/federalist-unit-008.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. VIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        8
+      ],
+      "content_chars": 12623,
+      "source_line_start": 1491,
+      "source_line_end": 1710,
+      "metadata": {
+        "paper_number": 8,
+        "heading_roman": "VIII",
+        "occurrence": 1,
+        "source_unit": 8,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-009-occurrence-1",
+      "path": "data/corpus/federalist-unit-009.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. IX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        9
+      ],
+      "content_chars": 12187,
+      "source_line_start": 1711,
+      "source_line_end": 1926,
+      "metadata": {
+        "paper_number": 9,
+        "heading_roman": "IX",
+        "occurrence": 1,
+        "source_unit": 9,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-010-occurrence-1",
+      "path": "data/corpus/federalist-unit-010.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. X (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        10
+      ],
+      "content_chars": 18115,
+      "source_line_start": 1927,
+      "source_line_end": 2239,
+      "metadata": {
+        "paper_number": 10,
+        "heading_roman": "X",
+        "occurrence": 1,
+        "source_unit": 10,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-011-occurrence-1",
+      "path": "data/corpus/federalist-unit-011.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        11
+      ],
+      "content_chars": 15146,
+      "source_line_start": 2240,
+      "source_line_end": 2495,
+      "metadata": {
+        "paper_number": 11,
+        "heading_roman": "XI",
+        "occurrence": 1,
+        "source_unit": 11,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-012-occurrence-1",
+      "path": "data/corpus/federalist-unit-012.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        12
+      ],
+      "content_chars": 13102,
+      "source_line_start": 2496,
+      "source_line_end": 2719,
+      "metadata": {
+        "paper_number": 12,
+        "heading_roman": "XII",
+        "occurrence": 1,
+        "source_unit": 12,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-013-occurrence-1",
+      "path": "data/corpus/federalist-unit-013.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        13
+      ],
+      "content_chars": 5900,
+      "source_line_start": 2720,
+      "source_line_end": 2825,
+      "metadata": {
+        "paper_number": 13,
+        "heading_roman": "XIII",
+        "occurrence": 1,
+        "source_unit": 13,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-014-occurrence-1",
+      "path": "data/corpus/federalist-unit-014.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        14
+      ],
+      "content_chars": 12880,
+      "source_line_start": 2826,
+      "source_line_end": 3047,
+      "metadata": {
+        "paper_number": 14,
+        "heading_roman": "XIV",
+        "occurrence": 1,
+        "source_unit": 14,
+        "category": "union_and_factions"
+      }
+    },
+    {
+      "document_id": "federalist-015-occurrence-1",
+      "path": "data/corpus/federalist-unit-015.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        15
+      ],
+      "content_chars": 18504,
+      "source_line_start": 3048,
+      "source_line_end": 3352,
+      "metadata": {
+        "paper_number": 15,
+        "heading_roman": "XV",
+        "occurrence": 1,
+        "source_unit": 15,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-016-occurrence-1",
+      "path": "data/corpus/federalist-unit-016.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XVI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        16
+      ],
+      "content_chars": 12316,
+      "source_line_start": 3353,
+      "source_line_end": 3563,
+      "metadata": {
+        "paper_number": 16,
+        "heading_roman": "XVI",
+        "occurrence": 1,
+        "source_unit": 16,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-017-occurrence-1",
+      "path": "data/corpus/federalist-unit-017.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XVII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        17
+      ],
+      "content_chars": 9857,
+      "source_line_start": 3564,
+      "source_line_end": 3742,
+      "metadata": {
+        "paper_number": 17,
+        "heading_roman": "XVII",
+        "occurrence": 1,
+        "source_unit": 17,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-018-occurrence-1",
+      "path": "data/corpus/federalist-unit-018.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XVIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        18
+      ],
+      "content_chars": 13200,
+      "source_line_start": 3743,
+      "source_line_end": 3982,
+      "metadata": {
+        "paper_number": 18,
+        "heading_roman": "XVIII",
+        "occurrence": 1,
+        "source_unit": 18,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-019-occurrence-1",
+      "path": "data/corpus/federalist-unit-019.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XIX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        19
+      ],
+      "content_chars": 12898,
+      "source_line_start": 3983,
+      "source_line_end": 4216,
+      "metadata": {
+        "paper_number": 19,
+        "heading_roman": "XIX",
+        "occurrence": 1,
+        "source_unit": 19,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-020-occurrence-1",
+      "path": "data/corpus/federalist-unit-020.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        20
+      ],
+      "content_chars": 9871,
+      "source_line_start": 4217,
+      "source_line_end": 4411,
+      "metadata": {
+        "paper_number": 20,
+        "heading_roman": "XX",
+        "occurrence": 1,
+        "source_unit": 20,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-021-occurrence-1",
+      "path": "data/corpus/federalist-unit-021.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        21
+      ],
+      "content_chars": 12069,
+      "source_line_start": 4412,
+      "source_line_end": 4619,
+      "metadata": {
+        "paper_number": 21,
+        "heading_roman": "XXI",
+        "occurrence": 1,
+        "source_unit": 21,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-022-occurrence-1",
+      "path": "data/corpus/federalist-unit-022.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        22
+      ],
+      "content_chars": 21336,
+      "source_line_start": 4620,
+      "source_line_end": 4981,
+      "metadata": {
+        "paper_number": 22,
+        "heading_roman": "XXII",
+        "occurrence": 1,
+        "source_unit": 22,
+        "category": "confederation"
+      }
+    },
+    {
+      "document_id": "federalist-023-occurrence-1",
+      "path": "data/corpus/federalist-unit-023.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        23
+      ],
+      "content_chars": 10955,
+      "source_line_start": 4982,
+      "source_line_end": 5173,
+      "metadata": {
+        "paper_number": 23,
+        "heading_roman": "XXIII",
+        "occurrence": 1,
+        "source_unit": 23,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-024-occurrence-1",
+      "path": "data/corpus/federalist-unit-024.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        24
+      ],
+      "content_chars": 12066,
+      "source_line_start": 5174,
+      "source_line_end": 5383,
+      "metadata": {
+        "paper_number": 24,
+        "heading_roman": "XXIV",
+        "occurrence": 1,
+        "source_unit": 24,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-025-occurrence-1",
+      "path": "data/corpus/federalist-unit-025.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        25
+      ],
+      "content_chars": 11855,
+      "source_line_start": 5384,
+      "source_line_end": 5588,
+      "metadata": {
+        "paper_number": 25,
+        "heading_roman": "XXV",
+        "occurrence": 1,
+        "source_unit": 25,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-026-occurrence-1",
+      "path": "data/corpus/federalist-unit-026.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXVI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        26
+      ],
+      "content_chars": 14070,
+      "source_line_start": 5589,
+      "source_line_end": 5827,
+      "metadata": {
+        "paper_number": 26,
+        "heading_roman": "XXVI",
+        "occurrence": 1,
+        "source_unit": 26,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-027-occurrence-1",
+      "path": "data/corpus/federalist-unit-027.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXVII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        27
+      ],
+      "content_chars": 8866,
+      "source_line_start": 5828,
+      "source_line_end": 5985,
+      "metadata": {
+        "paper_number": 27,
+        "heading_roman": "XXVII",
+        "occurrence": 1,
+        "source_unit": 27,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-028-occurrence-1",
+      "path": "data/corpus/federalist-unit-028.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXVIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        28
+      ],
+      "content_chars": 9804,
+      "source_line_start": 5986,
+      "source_line_end": 6162,
+      "metadata": {
+        "paper_number": 28,
+        "heading_roman": "XXVIII",
+        "occurrence": 1,
+        "source_unit": 28,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-029-occurrence-1",
+      "path": "data/corpus/federalist-unit-029.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXIX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        29
+      ],
+      "content_chars": 13114,
+      "source_line_start": 6163,
+      "source_line_end": 6391,
+      "metadata": {
+        "paper_number": 29,
+        "heading_roman": "XXIX",
+        "occurrence": 1,
+        "source_unit": 29,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-030-occurrence-1",
+      "path": "data/corpus/federalist-unit-030.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        30
+      ],
+      "content_chars": 11835,
+      "source_line_start": 6392,
+      "source_line_end": 6593,
+      "metadata": {
+        "paper_number": 30,
+        "heading_roman": "XXX",
+        "occurrence": 1,
+        "source_unit": 30,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-031-occurrence-1",
+      "path": "data/corpus/federalist-unit-031.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        31
+      ],
+      "content_chars": 10425,
+      "source_line_start": 6594,
+      "source_line_end": 6779,
+      "metadata": {
+        "paper_number": 31,
+        "heading_roman": "XXXI",
+        "occurrence": 1,
+        "source_unit": 31,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-032-occurrence-1",
+      "path": "data/corpus/federalist-unit-032.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        32
+      ],
+      "content_chars": 9029,
+      "source_line_start": 6780,
+      "source_line_end": 6934,
+      "metadata": {
+        "paper_number": 32,
+        "heading_roman": "XXXII",
+        "occurrence": 1,
+        "source_unit": 32,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-033-occurrence-1",
+      "path": "data/corpus/federalist-unit-033.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        33
+      ],
+      "content_chars": 10009,
+      "source_line_start": 6935,
+      "source_line_end": 7109,
+      "metadata": {
+        "paper_number": 33,
+        "heading_roman": "XXXIII",
+        "occurrence": 1,
+        "source_unit": 33,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-034-occurrence-1",
+      "path": "data/corpus/federalist-unit-034.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        34
+      ],
+      "content_chars": 13130,
+      "source_line_start": 7110,
+      "source_line_end": 7334,
+      "metadata": {
+        "paper_number": 34,
+        "heading_roman": "XXXIV",
+        "occurrence": 1,
+        "source_unit": 34,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-035-occurrence-1",
+      "path": "data/corpus/federalist-unit-035.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        35
+      ],
+      "content_chars": 13505,
+      "source_line_start": 7335,
+      "source_line_end": 7563,
+      "metadata": {
+        "paper_number": 35,
+        "heading_roman": "XXXV",
+        "occurrence": 1,
+        "source_unit": 35,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-036-occurrence-1",
+      "path": "data/corpus/federalist-unit-036.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXVI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        36
+      ],
+      "content_chars": 16177,
+      "source_line_start": 7564,
+      "source_line_end": 7840,
+      "metadata": {
+        "paper_number": 36,
+        "heading_roman": "XXXVI",
+        "occurrence": 1,
+        "source_unit": 36,
+        "category": "defense_and_taxation"
+      }
+    },
+    {
+      "document_id": "federalist-037-occurrence-1",
+      "path": "data/corpus/federalist-unit-037.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXVII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        37
+      ],
+      "content_chars": 16857,
+      "source_line_start": 7841,
+      "source_line_end": 8126,
+      "metadata": {
+        "paper_number": 37,
+        "heading_roman": "XXXVII",
+        "occurrence": 1,
+        "source_unit": 37,
+        "category": "convention_and_republicanism"
+      }
+    },
+    {
+      "document_id": "federalist-038-occurrence-1",
+      "path": "data/corpus/federalist-unit-038.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXVIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        38
+      ],
+      "content_chars": 19730,
+      "source_line_start": 8127,
+      "source_line_end": 8445,
+      "metadata": {
+        "paper_number": 38,
+        "heading_roman": "XXXVIII",
+        "occurrence": 1,
+        "source_unit": 38,
+        "category": "convention_and_republicanism"
+      }
+    },
+    {
+      "document_id": "federalist-039-occurrence-1",
+      "path": "data/corpus/federalist-unit-039.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XXXIX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        39
+      ],
+      "content_chars": 15710,
+      "source_line_start": 8446,
+      "source_line_end": 8712,
+      "metadata": {
+        "paper_number": 39,
+        "heading_roman": "XXXIX",
+        "occurrence": 1,
+        "source_unit": 39,
+        "category": "convention_and_republicanism"
+      }
+    },
+    {
+      "document_id": "federalist-040-occurrence-1",
+      "path": "data/corpus/federalist-unit-040.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XL (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        40
+      ],
+      "content_chars": 18513,
+      "source_line_start": 8713,
+      "source_line_end": 9004,
+      "metadata": {
+        "paper_number": 40,
+        "heading_roman": "XL",
+        "occurrence": 1,
+        "source_unit": 40,
+        "category": "convention_and_republicanism"
+      }
+    },
+    {
+      "document_id": "federalist-041-occurrence-1",
+      "path": "data/corpus/federalist-unit-041.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        41
+      ],
+      "content_chars": 21189,
+      "source_line_start": 9005,
+      "source_line_end": 9333,
+      "metadata": {
+        "paper_number": 41,
+        "heading_roman": "XLI",
+        "occurrence": 1,
+        "source_unit": 41,
+        "category": "convention_and_republicanism"
+      }
+    },
+    {
+      "document_id": "federalist-042-occurrence-1",
+      "path": "data/corpus/federalist-unit-042.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        42
+      ],
+      "content_chars": 17050,
+      "source_line_start": 9334,
+      "source_line_end": 9602,
+      "metadata": {
+        "paper_number": 42,
+        "heading_roman": "XLII",
+        "occurrence": 1,
+        "source_unit": 42,
+        "category": "convention_and_republicanism"
+      }
+    },
+    {
+      "document_id": "federalist-043-occurrence-1",
+      "path": "data/corpus/federalist-unit-043.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        43
+      ],
+      "content_chars": 20850,
+      "source_line_start": 9603,
+      "source_line_end": 9928,
+      "metadata": {
+        "paper_number": 43,
+        "heading_roman": "XLIII",
+        "occurrence": 1,
+        "source_unit": 43,
+        "category": "convention_and_republicanism"
+      }
+    },
+    {
+      "document_id": "federalist-044-occurrence-1",
+      "path": "data/corpus/federalist-unit-044.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        44
+      ],
+      "content_chars": 17601,
+      "source_line_start": 9929,
+      "source_line_end": 10207,
+      "metadata": {
+        "paper_number": 44,
+        "heading_roman": "XLIV",
+        "occurrence": 1,
+        "source_unit": 44,
+        "category": "federal_state_powers"
+      }
+    },
+    {
+      "document_id": "federalist-045-occurrence-1",
+      "path": "data/corpus/federalist-unit-045.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        45
+      ],
+      "content_chars": 13060,
+      "source_line_start": 10208,
+      "source_line_end": 10422,
+      "metadata": {
+        "paper_number": 45,
+        "heading_roman": "XLV",
+        "occurrence": 1,
+        "source_unit": 45,
+        "category": "federal_state_powers"
+      }
+    },
+    {
+      "document_id": "federalist-046-occurrence-1",
+      "path": "data/corpus/federalist-unit-046.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLVI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        46
+      ],
+      "content_chars": 15936,
+      "source_line_start": 10423,
+      "source_line_end": 10678,
+      "metadata": {
+        "paper_number": 46,
+        "heading_roman": "XLVI",
+        "occurrence": 1,
+        "source_unit": 46,
+        "category": "federal_state_powers"
+      }
+    },
+    {
+      "document_id": "federalist-047-occurrence-1",
+      "path": "data/corpus/federalist-unit-047.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLVII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        47
+      ],
+      "content_chars": 17120,
+      "source_line_start": 10679,
+      "source_line_end": 10951,
+      "metadata": {
+        "paper_number": 47,
+        "heading_roman": "XLVII",
+        "occurrence": 1,
+        "source_unit": 47,
+        "category": "separation_and_checks"
+      }
+    },
+    {
+      "document_id": "federalist-048-occurrence-1",
+      "path": "data/corpus/federalist-unit-048.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLVIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        48
+      ],
+      "content_chars": 11709,
+      "source_line_start": 10952,
+      "source_line_end": 11144,
+      "metadata": {
+        "paper_number": 48,
+        "heading_roman": "XLVIII",
+        "occurrence": 1,
+        "source_unit": 48,
+        "category": "separation_and_checks"
+      }
+    },
+    {
+      "document_id": "federalist-049-occurrence-1",
+      "path": "data/corpus/federalist-unit-049.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. XLIX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        49
+      ],
+      "content_chars": 10164,
+      "source_line_start": 11145,
+      "source_line_end": 11312,
+      "metadata": {
+        "paper_number": 49,
+        "heading_roman": "XLIX",
+        "occurrence": 1,
+        "source_unit": 49,
+        "category": "separation_and_checks"
+      }
+    },
+    {
+      "document_id": "federalist-050-occurrence-1",
+      "path": "data/corpus/federalist-unit-050.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. L (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        50
+      ],
+      "content_chars": 6986,
+      "source_line_start": 11313,
+      "source_line_end": 11436,
+      "metadata": {
+        "paper_number": 50,
+        "heading_roman": "L",
+        "occurrence": 1,
+        "source_unit": 50,
+        "category": "separation_and_checks"
+      }
+    },
+    {
+      "document_id": "federalist-051-occurrence-1",
+      "path": "data/corpus/federalist-unit-051.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        51
+      ],
+      "content_chars": 11805,
+      "source_line_start": 11437,
+      "source_line_end": 11623,
+      "metadata": {
+        "paper_number": 51,
+        "heading_roman": "LI",
+        "occurrence": 1,
+        "source_unit": 51,
+        "category": "separation_and_checks"
+      }
+    },
+    {
+      "document_id": "federalist-052-occurrence-1",
+      "path": "data/corpus/federalist-unit-052.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        52
+      ],
+      "content_chars": 11184,
+      "source_line_start": 11624,
+      "source_line_end": 11807,
+      "metadata": {
+        "paper_number": 52,
+        "heading_roman": "LII",
+        "occurrence": 1,
+        "source_unit": 52,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-053-occurrence-1",
+      "path": "data/corpus/federalist-unit-053.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        53
+      ],
+      "content_chars": 13193,
+      "source_line_start": 11808,
+      "source_line_end": 12017,
+      "metadata": {
+        "paper_number": 53,
+        "heading_roman": "LIII",
+        "occurrence": 1,
+        "source_unit": 53,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-054-occurrence-1",
+      "path": "data/corpus/federalist-unit-054.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        54
+      ],
+      "content_chars": 11963,
+      "source_line_start": 12018,
+      "source_line_end": 12211,
+      "metadata": {
+        "paper_number": 54,
+        "heading_roman": "LIV",
+        "occurrence": 1,
+        "source_unit": 54,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-055-occurrence-1",
+      "path": "data/corpus/federalist-unit-055.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        55
+      ],
+      "content_chars": 12210,
+      "source_line_start": 12212,
+      "source_line_end": 12414,
+      "metadata": {
+        "paper_number": 55,
+        "heading_roman": "LV",
+        "occurrence": 1,
+        "source_unit": 55,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-056-occurrence-1",
+      "path": "data/corpus/federalist-unit-056.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LVI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        56
+      ],
+      "content_chars": 9702,
+      "source_line_start": 12415,
+      "source_line_end": 12576,
+      "metadata": {
+        "paper_number": 56,
+        "heading_roman": "LVI",
+        "occurrence": 1,
+        "source_unit": 56,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-057-occurrence-1",
+      "path": "data/corpus/federalist-unit-057.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LVII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        57
+      ],
+      "content_chars": 13237,
+      "source_line_start": 12577,
+      "source_line_end": 12793,
+      "metadata": {
+        "paper_number": 57,
+        "heading_roman": "LVII",
+        "occurrence": 1,
+        "source_unit": 57,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-058-occurrence-1",
+      "path": "data/corpus/federalist-unit-058.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LVIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        58
+      ],
+      "content_chars": 12796,
+      "source_line_start": 12794,
+      "source_line_end": 12996,
+      "metadata": {
+        "paper_number": 58,
+        "heading_roman": "LVIII",
+        "occurrence": 1,
+        "source_unit": 58,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-059-occurrence-1",
+      "path": "data/corpus/federalist-unit-059.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LIX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        59
+      ],
+      "content_chars": 11390,
+      "source_line_start": 12997,
+      "source_line_end": 13178,
+      "metadata": {
+        "paper_number": 59,
+        "heading_roman": "LIX",
+        "occurrence": 1,
+        "source_unit": 59,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-060-occurrence-1",
+      "path": "data/corpus/federalist-unit-060.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        60
+      ],
+      "content_chars": 13470,
+      "source_line_start": 13179,
+      "source_line_end": 13410,
+      "metadata": {
+        "paper_number": 60,
+        "heading_roman": "LX",
+        "occurrence": 1,
+        "source_unit": 60,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-061-occurrence-1",
+      "path": "data/corpus/federalist-unit-061.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        61
+      ],
+      "content_chars": 9015,
+      "source_line_start": 13411,
+      "source_line_end": 13566,
+      "metadata": {
+        "paper_number": 61,
+        "heading_roman": "LXI",
+        "occurrence": 1,
+        "source_unit": 61,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-062-occurrence-1",
+      "path": "data/corpus/federalist-unit-062.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        62
+      ],
+      "content_chars": 14282,
+      "source_line_start": 13567,
+      "source_line_end": 13816,
+      "metadata": {
+        "paper_number": 62,
+        "heading_roman": "LXII",
+        "occurrence": 1,
+        "source_unit": 62,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-063-occurrence-1",
+      "path": "data/corpus/federalist-unit-063.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        63
+      ],
+      "content_chars": 18403,
+      "source_line_start": 13817,
+      "source_line_end": 14131,
+      "metadata": {
+        "paper_number": 63,
+        "heading_roman": "LXIII",
+        "occurrence": 1,
+        "source_unit": 63,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-064-occurrence-1",
+      "path": "data/corpus/federalist-unit-064.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        64
+      ],
+      "content_chars": 13657,
+      "source_line_start": 14132,
+      "source_line_end": 14368,
+      "metadata": {
+        "paper_number": 64,
+        "heading_roman": "LXIV",
+        "occurrence": 1,
+        "source_unit": 64,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-065-occurrence-1",
+      "path": "data/corpus/federalist-unit-065.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        65
+      ],
+      "content_chars": 11991,
+      "source_line_start": 14369,
+      "source_line_end": 14576,
+      "metadata": {
+        "paper_number": 65,
+        "heading_roman": "LXV",
+        "occurrence": 1,
+        "source_unit": 65,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-066-occurrence-1",
+      "path": "data/corpus/federalist-unit-066.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXVI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        66
+      ],
+      "content_chars": 13495,
+      "source_line_start": 14577,
+      "source_line_end": 14811,
+      "metadata": {
+        "paper_number": 66,
+        "heading_roman": "LXVI",
+        "occurrence": 1,
+        "source_unit": 66,
+        "category": "legislature"
+      }
+    },
+    {
+      "document_id": "federalist-067-occurrence-1",
+      "path": "data/corpus/federalist-unit-067.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXVII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        67
+      ],
+      "content_chars": 10056,
+      "source_line_start": 14812,
+      "source_line_end": 14993,
+      "metadata": {
+        "paper_number": 67,
+        "heading_roman": "LXVII",
+        "occurrence": 1,
+        "source_unit": 67,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-068-occurrence-1",
+      "path": "data/corpus/federalist-unit-068.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXVIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        68
+      ],
+      "content_chars": 8927,
+      "source_line_start": 14994,
+      "source_line_end": 15158,
+      "metadata": {
+        "paper_number": 68,
+        "heading_roman": "LXVIII",
+        "occurrence": 1,
+        "source_unit": 68,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-069-occurrence-1",
+      "path": "data/corpus/federalist-unit-069.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXIX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        69
+      ],
+      "content_chars": 17593,
+      "source_line_start": 15159,
+      "source_line_end": 15450,
+      "metadata": {
+        "paper_number": 69,
+        "heading_roman": "LXIX",
+        "occurrence": 1,
+        "source_unit": 69,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-070-occurrence-1",
+      "path": "data/corpus/federalist-unit-070.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        70
+      ],
+      "content_chars": 18875,
+      "source_line_start": 15451,
+      "source_line_end": 15780,
+      "metadata": {
+        "paper_number": 70,
+        "heading_roman": "LXX",
+        "occurrence": 1,
+        "source_unit": 70,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-070-occurrence-2",
+      "path": "data/corpus/federalist-unit-071.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXX (occurrence 2)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        71
+      ],
+      "content_chars": 18737,
+      "source_line_start": 15781,
+      "source_line_end": 16107,
+      "metadata": {
+        "paper_number": 70,
+        "heading_roman": "LXX",
+        "occurrence": 2,
+        "source_unit": 71,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-071-occurrence-1",
+      "path": "data/corpus/federalist-unit-072.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        72
+      ],
+      "content_chars": 10327,
+      "source_line_start": 16108,
+      "source_line_end": 16285,
+      "metadata": {
+        "paper_number": 71,
+        "heading_roman": "LXXI",
+        "occurrence": 1,
+        "source_unit": 72,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-072-occurrence-1",
+      "path": "data/corpus/federalist-unit-073.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        73
+      ],
+      "content_chars": 12202,
+      "source_line_start": 16286,
+      "source_line_end": 16501,
+      "metadata": {
+        "paper_number": 72,
+        "heading_roman": "LXXII",
+        "occurrence": 1,
+        "source_unit": 73,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-073-occurrence-1",
+      "path": "data/corpus/federalist-unit-074.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        74
+      ],
+      "content_chars": 13985,
+      "source_line_start": 16502,
+      "source_line_end": 16742,
+      "metadata": {
+        "paper_number": 73,
+        "heading_roman": "LXXIII",
+        "occurrence": 1,
+        "source_unit": 74,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-074-occurrence-1",
+      "path": "data/corpus/federalist-unit-075.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        75
+      ],
+      "content_chars": 6070,
+      "source_line_start": 16743,
+      "source_line_end": 16852,
+      "metadata": {
+        "paper_number": 74,
+        "heading_roman": "LXXIV",
+        "occurrence": 1,
+        "source_unit": 75,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-075-occurrence-1",
+      "path": "data/corpus/federalist-unit-076.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        76
+      ],
+      "content_chars": 11489,
+      "source_line_start": 16853,
+      "source_line_end": 17045,
+      "metadata": {
+        "paper_number": 75,
+        "heading_roman": "LXXV",
+        "occurrence": 1,
+        "source_unit": 76,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-076-occurrence-1",
+      "path": "data/corpus/federalist-unit-077.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXVI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        77
+      ],
+      "content_chars": 13497,
+      "source_line_start": 17046,
+      "source_line_end": 17274,
+      "metadata": {
+        "paper_number": 76,
+        "heading_roman": "LXXVI",
+        "occurrence": 1,
+        "source_unit": 77,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-077-occurrence-1",
+      "path": "data/corpus/federalist-unit-078.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXVII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        78
+      ],
+      "content_chars": 11821,
+      "source_line_start": 17275,
+      "source_line_end": 17477,
+      "metadata": {
+        "paper_number": 77,
+        "heading_roman": "LXXVII",
+        "occurrence": 1,
+        "source_unit": 78,
+        "category": "executive"
+      }
+    },
+    {
+      "document_id": "federalist-078-occurrence-1",
+      "path": "data/corpus/federalist-unit-079.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXVIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        79
+      ],
+      "content_chars": 18408,
+      "source_line_start": 17478,
+      "source_line_end": 17797,
+      "metadata": {
+        "paper_number": 78,
+        "heading_roman": "LXXVIII",
+        "occurrence": 1,
+        "source_unit": 79,
+        "category": "judiciary"
+      }
+    },
+    {
+      "document_id": "federalist-079-occurrence-1",
+      "path": "data/corpus/federalist-unit-080.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXIX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        80
+      ],
+      "content_chars": 6216,
+      "source_line_start": 17798,
+      "source_line_end": 17914,
+      "metadata": {
+        "paper_number": 79,
+        "heading_roman": "LXXIX",
+        "occurrence": 1,
+        "source_unit": 80,
+        "category": "judiciary"
+      }
+    },
+    {
+      "document_id": "federalist-080-occurrence-1",
+      "path": "data/corpus/federalist-unit-081.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXX (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        81
+      ],
+      "content_chars": 14875,
+      "source_line_start": 17915,
+      "source_line_end": 18177,
+      "metadata": {
+        "paper_number": 80,
+        "heading_roman": "LXXX",
+        "occurrence": 1,
+        "source_unit": 81,
+        "category": "judiciary"
+      }
+    },
+    {
+      "document_id": "federalist-081-occurrence-1",
+      "path": "data/corpus/federalist-unit-082.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXXI (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        82
+      ],
+      "content_chars": 23050,
+      "source_line_start": 18178,
+      "source_line_end": 18561,
+      "metadata": {
+        "paper_number": 81,
+        "heading_roman": "LXXXI",
+        "occurrence": 1,
+        "source_unit": 82,
+        "category": "judiciary"
+      }
+    },
+    {
+      "document_id": "federalist-082-occurrence-1",
+      "path": "data/corpus/federalist-unit-083.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXXII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        83
+      ],
+      "content_chars": 9273,
+      "source_line_start": 18562,
+      "source_line_end": 18724,
+      "metadata": {
+        "paper_number": 82,
+        "heading_roman": "LXXXII",
+        "occurrence": 1,
+        "source_unit": 83,
+        "category": "judiciary"
+      }
+    },
+    {
+      "document_id": "federalist-083-occurrence-1",
+      "path": "data/corpus/federalist-unit-084.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXXIII (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        84
+      ],
+      "content_chars": 34189,
+      "source_line_start": 18725,
+      "source_line_end": 19290,
+      "metadata": {
+        "paper_number": 83,
+        "heading_roman": "LXXXIII",
+        "occurrence": 1,
+        "source_unit": 84,
+        "category": "judiciary"
+      }
+    },
+    {
+      "document_id": "federalist-084-occurrence-1",
+      "path": "data/corpus/federalist-unit-085.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXXIV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        85
+      ],
+      "content_chars": 24861,
+      "source_line_start": 19291,
+      "source_line_end": 19706,
+      "metadata": {
+        "paper_number": 84,
+        "heading_roman": "LXXXIV",
+        "occurrence": 1,
+        "source_unit": 85,
+        "category": "objections_and_conclusion"
+      }
+    },
+    {
+      "document_id": "federalist-085-occurrence-1",
+      "path": "data/corpus/federalist-unit-086.txt",
+      "source": "Project Gutenberg eBook #18, Federalist No. LXXXV (occurrence 1)",
+      "format": "text",
+      "license_or_permission": "Original essays are public domain; Project Gutenberg eBook terms apply to its electronic edition. Source states users outside the U.S. must check local law; the authors died in 1804, 1804, and 1836.",
+      "accessed_at": "2026-11-13",
+      "content_pages": [
+        86
+      ],
+      "content_chars": 16007,
+      "source_line_start": 19707,
+      "source_line_end": 19979,
+      "metadata": {
+        "paper_number": 85,
+        "heading_roman": "LXXXV",
+        "occurrence": 1,
+        "source_unit": 86,
+        "category": "objections_and_conclusion"
+      }
+    }
+  ]
+}
