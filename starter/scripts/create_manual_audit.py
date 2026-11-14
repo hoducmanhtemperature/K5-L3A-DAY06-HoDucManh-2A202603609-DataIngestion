@@ -9,7 +9,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.chunking import by_paragraph, fixed_size
 from src.models import DocumentPage
-REVIEWER = "Nhãn đề xuất có hỗ trợ của AI; học viên chưa xác nhận độc lập"
+REVIEWER = "AI-generated audit draft; pending student review"
 
 
 def main() -> None:
