@@ -41,6 +41,10 @@ def main() -> None:
         raise ValueError("At least three questions must exercise a metadata filter")
     if not any(q.get("filter") for q in questions if q.get("split") == "test"):
         raise ValueError("At least one test question must exercise a metadata filter")
+    split_filter = os.environ.get("DAY6_EVAL_SPLIT")
+    if split_filter not in (None, "dev", "test"):
+        raise ValueError("DAY6_EVAL_SPLIT must be 'dev', 'test', or unset")
+    evaluation_questions = [q for q in questions if split_filter is None or q["split"] == split_filter]
 
     pages = []
     errors = []
@@ -84,9 +88,13 @@ def main() -> None:
         "B": lambda page: by_paragraph(page, max_size=700),
         "C": lambda page: by_paragraph(page, max_size=700),
     }
+    paragraph_chunks = None
     for strategy, chunk_fn in configurations.items():
         started = perf_counter()
-        chunks = [chunk for page in pages for chunk in chunk_fn(page)]
+        if strategy == "C":
+            chunks = paragraph_chunks
+        else:
+            chunks = [chunk for page in pages for chunk in chunk_fn(page)]
         chunk_lengths = sorted(len(chunk.text) for chunk in chunks)
 
         def percentile(p: float) -> int:
@@ -94,9 +102,14 @@ def main() -> None:
                 return 0
             return chunk_lengths[round((len(chunk_lengths) - 1) * p)]
 
-        vectors = embedder.embed_documents([chunk.text for chunk in chunks])
-        store.upsert(strategy, chunks, vectors)
-        ingest_seconds = perf_counter() - started
+        if strategy != "C":
+            vectors = embedder.embed_documents([chunk.text for chunk in chunks])
+            store.upsert(strategy, chunks, vectors)
+            ingest_seconds = perf_counter() - started
+            if strategy == "B":
+                paragraph_chunks = chunks
+        else:
+            ingest_seconds = 0.0
         resource_rows.append({"strategy": strategy, "chunk_count": len(chunks),
                               "total_chunk_chars": sum(len(c.text) for c in chunks),
                               "mean_chunk_chars": round(sum(len(c.text) for c in chunks)/max(len(chunks), 1), 2),
@@ -113,10 +126,16 @@ def main() -> None:
                               "embedding_library_version": version("sentence-transformers"),
                               "torch_version": version("torch"), "vector_store_version": version("chromadb"),
                               "python_version": platform.python_version()})
+        resource_rows[-1]["retrieval_candidates"] = 50
+        resource_rows[-1]["hnsw_ef_search"] = 300
+        resource_rows[-1]["reranker"] = "BM25 + cosine similarity (lexical weight 0.30)"
+        if strategy == "C":
+            resource_rows[-1]["index_reused_from"] = "B"
         retrieval_started = perf_counter()
-        for question in questions:
+        for question in evaluation_questions:
             filters = question.get("filter", {}) if strategy == "C" else {}
-            hits = store.search(strategy, embedder.embed_query(question["question"]), top_k=3, filters=filters)
+            hits = store.search(strategy, embedder.embed_query(question["question"]), top_k=3,
+                                query_text=question["question"], filters=filters)
             trace = evaluate_query(question, hits)
             trace.update({"strategy": strategy, "question": question["question"], "filter_applied": filters})
             all_traces.append(trace)
@@ -125,7 +144,7 @@ def main() -> None:
     _write_json(HERE / "results/traces.json", all_traces)
     _write_json(HERE / "results/retrieval_metrics.json", summarize(all_traces))
     _write_json(HERE / "results/resource_metrics.json", resource_rows)
-    print(f"Wrote {len(all_traces)} retrieval traces for {len(questions)} questions to results/.")
+    print(f"Wrote {len(all_traces)} retrieval traces for {len(evaluation_questions)} evaluated questions to results/.")
     print("Manual coherence, metadata correctness and grounding labels are intentionally not fabricated; record them in results/manual_audit.csv.")
 
 

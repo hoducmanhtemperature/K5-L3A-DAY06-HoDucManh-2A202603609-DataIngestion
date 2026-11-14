@@ -1,50 +1,50 @@
 {
   "A/dev": {
     "n": 15,
-    "hit1": 4,
-    "hit1_rate": 0.26666666666666666,
+    "hit1": 6,
+    "hit1_rate": 0.4,
     "evidence_hit3": 7,
     "evidence_hit3_rate": 0.4666666666666667
   },
   "A/test": {
     "n": 5,
-    "hit1": 0,
-    "hit1_rate": 0.0,
-    "evidence_hit3": 0,
-    "evidence_hit3_rate": 0.0
+    "hit1": 2,
+    "hit1_rate": 0.4,
+    "evidence_hit3": 2,
+    "evidence_hit3_rate": 0.4
   },
   "B/dev": {
     "n": 15,
-    "hit1": 6,
-    "hit1_rate": 0.4,
-    "evidence_hit3": 11,
-    "evidence_hit3_rate": 0.7333333333333333
+    "hit1": 7,
+    "hit1_rate": 0.4666666666666667,
+    "evidence_hit3": 12,
+    "evidence_hit3_rate": 0.8
   },
   "B/test": {
     "n": 5,
-    "hit1": 0,
-    "hit1_rate": 0.0,
-    "evidence_hit3": 0,
-    "evidence_hit3_rate": 0.0
+    "hit1": 3,
+    "hit1_rate": 0.6,
+    "evidence_hit3": 3,
+    "evidence_hit3_rate": 0.6
   },
   "C/dev": {
     "n": 15,
-    "hit1": 5,
-    "hit1_rate": 0.3333333333333333,
-    "evidence_hit3": 10,
-    "evidence_hit3_rate": 0.6666666666666666,
+    "hit1": 7,
+    "hit1_rate": 0.4666666666666667,
+    "evidence_hit3": 12,
+    "evidence_hit3_rate": 0.8,
     "filter_questions": 2,
     "filter_compliant": 2,
     "filter_compliance_rate": 1.0
   },
   "C/test": {
     "n": 5,
-    "hit1": 0,
-    "hit1_rate": 0.0,
-    "evidence_hit3": 0,
-    "evidence_hit3_rate": 0.0,
-    "filter_questions": 5,
-    "filter_compliant": 5,
+    "hit1": 3,
+    "hit1_rate": 0.6,
+    "evidence_hit3": 4,
+    "evidence_hit3_rate": 0.8,
+    "filter_questions": 4,
+    "filter_compliant": 4,
     "filter_compliance_rate": 1.0
   }
 }

@@ -14,7 +14,7 @@ starter/
 ├── src/
 │   ├── models.py           # cấu trúc dữ liệu
 │   ├── ingestion.py        # trích xuất và chuẩn hóa PDF/văn bản
-│   ├── chunking.py         # chia đoạn cố định hoặc theo đoạn văn
+│   ├── chunking.py         # chia cửa sổ cố định hoặc gộp đoạn, tôn trọng câu
 │   ├── embeddings.py       # bộ kết nối Sentence Transformers cục bộ
 │   ├── store.py            # kho Chroma lưu bền vững và bộ kết nối PostgreSQL
 │   ├── evaluation.py       # chỉ số truy xuất và trace
@@ -41,7 +41,7 @@ python scripts/prepare_gutenberg.py
 python -m src.run
 ```
 
-Mô hình mặc định là `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`; lần chạy đầu có thể cần tải mô hình. Chroma dùng cosine với chỉ mục HNSW và lưu tại `data/chroma`. Có thể đổi mô hình hoặc thư mục lưu bằng `DAY6_EMBEDDING_MODEL` và `DAY6_VECTOR_DIR`.
+Mô hình mặc định là `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`; lần chạy đầu có thể cần tải mô hình. Chroma dùng cosine với chỉ mục HNSW, 50 ứng viên và `ef_search=300`; BM25 kết hợp cosine để xếp hạng lại. B và C dùng chung chỉ mục B; C áp dụng filter category trước truy xuất. Dữ liệu lưu tại `data/chroma`. Có thể đổi mô hình hoặc thư mục lưu bằng `DAY6_EMBEDDING_MODEL` và `DAY6_VECTOR_DIR`.
 
 ## Kết quả và đánh giá
 
@@ -49,4 +49,4 @@ Thư mục `results/` lưu top-3 đoạn truy xuất, điểm, metadata, Hit@1/E
 
 Các nhãn coherence và grounding hiện được đề xuất với hỗ trợ của AI từ trace đã lưu, chưa phải đánh giá độc lập của học viên. Trước khi nộp, hãy kiểm tra mẫu vị trí coherence, 45 bản ghi metadata (5 câu test × top-3) và grounding theo [GUIDE.md](../GUIDE.md). Grounding đo mức độ bằng chứng truy xuất, không phải độ chính xác câu trả lời của mô hình ngôn ngữ.
 
-Mỗi lần chạy lại sẽ xóa và dựng lại collection của từng chiến lược trước khi nạp vector; nhờ vậy các đoạn cũ được loại bỏ khi corpus thay đổi. Lưu mã nguồn, cấu hình, kết quả và lệnh chạy để người chấm có thể tái lập. Không đưa khóa API, dữ liệu riêng tư hoặc dữ liệu không có quyền chia sẻ vào repo.
+Mỗi lần chạy lại sẽ xóa và dựng lại collection A và B trước khi nạp vector; C dùng chỉ mục B nên không tạo bản sao. Nhờ vậy các đoạn cũ được loại bỏ khi corpus thay đổi. Lưu mã nguồn, cấu hình, kết quả và lệnh chạy để người chấm có thể tái lập. Không đưa khóa API, dữ liệu riêng tư hoặc dữ liệu không có quyền chia sẻ vào repo.

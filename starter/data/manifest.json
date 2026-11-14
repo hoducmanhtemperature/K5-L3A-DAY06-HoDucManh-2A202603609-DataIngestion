@@ -5,7 +5,7 @@
   "license_or_permission": "The original essays are public domain. Project Gutenberg's eBook notice states the text may be reused under the Project Gutenberg License and asks users outside the U.S. to verify local law.",
   "accessed_at": "2026-11-13",
   "source_sha256": "a6c9d1135a04d10955fe11d210b7f642e1c2341d4f2c8369b9a832cc97839d94",
-  "unit_rule": "One Federalist essay per source unit; line-wrapped paragraphs are reflowed; Unicode NFC normalization is applied by the ingestion pipeline when loaded, and paragraph boundaries retained. Each unit exceeds 1,500 characters. Unit sequence is preserved because the source has a duplicated No. LXX heading. The broad category field groups ranges by the essay titles in the source contents list and is intended only for coarse filtering.",
+  "unit_rule": "One Federalist essay per source unit; text is Unicode-normalized, line-wrapped paragraphs reflowed, and paragraph boundaries retained. Each unit exceeds 1,500 characters. Unit sequence is preserved because the source has a duplicated No. LXX heading. The broad category field groups ranges by the essay titles in the source contents list and is intended only for coarse filtering.",
   "documents": [
     {
       "document_id": "federalist-001-occurrence-1",

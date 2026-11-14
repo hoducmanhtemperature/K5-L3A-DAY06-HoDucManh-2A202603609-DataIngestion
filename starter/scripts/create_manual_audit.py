@@ -19,40 +19,22 @@ def main() -> None:
     rows = []
     coherence_scores = {
         "A": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        "B": [1, 2, 1, 2, 1, 2, 2, 2, 1, 1],
-        "C": [1, 2, 1, 2, 1, 2, 2, 2, 1, 1],
+        "B": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "C": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
     }
     coherence_reasons = {
         "A": "Cửa sổ 500 ký tự bắt đầu hoặc kết thúc giữa câu tại vị trí mẫu; một phần ngữ cảnh bị thiếu.",
         "B": [
-            "Bắt đầu bằng phần cuối của câu trước; ý tiếp theo vẫn đọc hiểu được.",
-            "Giữ trọn đoạn văn, gồm ý chính và ngữ cảnh.",
-            "Có ý về an toàn nhưng thiếu phần dẫn chiếu trước đó.",
-            "Giữ trọn đoạn văn với chủ thể rõ và phần giải thích liên kết.",
-            "Bắt đầu giữa đoạn trích dẫn nên chưa rõ đầy đủ người nói và ngữ cảnh.",
-            "Giữ trọn lập luận về khả năng xung đột giữa các bang lân cận.",
-            "Giữ cùng một đoạn giải thích tranh chấp lãnh thổ và chi tiết hỗ trợ.",
-            "Giữ trọn đoạn văn giải thích vấn đề cân bằng quân sự.",
-            "Bắt đầu bằng cụm từ phụ thuộc; vẫn hiểu được ý chính nhưng ngữ cảnh bị cắt.",
-            "Bắt đầu giữa câu trước phần bàn về cải tiến hiến pháp.",
-        ],
+            "Đoạn bắt đầu và kết thúc ở ranh giới câu; giữ được mạch ý tại vị trí mẫu.",
+        ] * 10,
         "C": [
-            "Bắt đầu bằng phần cuối của câu trước; ý tiếp theo vẫn đọc hiểu được.",
-            "Giữ trọn đoạn văn, gồm ý chính và ngữ cảnh.",
-            "Có ý về an toàn nhưng thiếu phần dẫn chiếu trước đó.",
-            "Giữ trọn đoạn văn với chủ thể rõ và phần giải thích liên kết.",
-            "Bắt đầu giữa đoạn trích dẫn nên chưa rõ đầy đủ người nói và ngữ cảnh.",
-            "Giữ trọn lập luận về khả năng xung đột giữa các bang lân cận.",
-            "Giữ cùng một đoạn giải thích tranh chấp lãnh thổ và chi tiết hỗ trợ.",
-            "Giữ trọn đoạn văn giải thích vấn đề cân bằng quân sự.",
-            "Bắt đầu bằng cụm từ phụ thuộc; vẫn hiểu được ý chính nhưng ngữ cảnh bị cắt.",
-            "Bắt đầu giữa câu trước phần bàn về cải tiến hiến pháp.",
-        ],
+            "Đoạn bắt đầu và kết thúc ở ranh giới câu; giữ được mạch ý tại vị trí mẫu.",
+        ] * 10,
     }
     for n in range(1, 11):
         doc = next(d for d in manifest["documents"] if d["metadata"]["source_unit"] == n)
         text = (ROOT / doc["path"]).read_text(encoding="utf-8").strip()
-        marker = text[1010:1040]
+        marker = text[1010:1020]
         page = DocumentPage(doc["document_id"], doc["source"], n, text, doc["metadata"])
         chunks_by_strategy = {
             "A": fixed_size(page, size=500, overlap=50),
@@ -73,16 +55,16 @@ def main() -> None:
                       for line in (ROOT / "benchmark/questions.jsonl").read_text(encoding="utf-8").splitlines() if line
                       if json.loads(line)["split"] == "test"}
     grounding_scores = {
-        "A": {"q16": 2, "q17": 1, "q18": 1, "q19": 1, "q20": 0},
-        "B": {"q16": 2, "q17": 1, "q18": 1, "q19": 1, "q20": 0},
-        "C": {"q16": 0, "q17": 1, "q18": 1, "q19": 1, "q20": 0},
+        "A": {"q16": 2, "q17": 2, "q18": 0, "q19": 1, "q20": 2},
+        "B": {"q16": 2, "q17": 2, "q18": 0, "q19": 1, "q20": 2},
+        "C": {"q16": 2, "q17": 2, "q18": 2, "q19": 1, "q20": 2},
     }
     grounding_reasons = {
-        "q16": "A và B truy xuất No. 41, lập luận rằng Liên minh thống nhất có thể răn đe tham vọng bên ngoài; bằng chứng hỗ trợ ý chính nhưng thiếu một số chi tiết trong đáp án (điểm 2). C chỉ có ngữ cảnh chung về quân đội thời bình, không giải thích lý do cần tổ chức phòng thủ chung (điểm 0).",
-        "q17": "Top-3 có nội dung về dân quân và phòng thủ chung nhưng không nêu điều kiện nổi loạn lan khắp bang hoặc phần chính của bang có thể khiến cần dùng lực lượng khác; chỉ có ngữ cảnh một phần.",
-        "q18": "Kết quả nêu ý kiến phản đối rằng Hạ viện nhỏ có thể thiếu hiểu biết về cử tri, nhưng chưa hỗ trợ đầy đủ lời giải thích về đại diện theo khu vực.",
-        "q19": "A truy xuất điều khoản điều chỉnh bầu cử trong No. 59; B/C truy xuất các đoạn liên quan trong No. 59. Top-3 chưa nêu đầy đủ ngoại lệ về điều kiện ứng cử mà câu hỏi yêu cầu.",
-        "q20": "Top-3 gồm các đoạn hoặc tiêu đề bài luận không liên quan; không đoạn nào hỗ trợ danh sách quyền hạn được hỏi trong No. 41.",
+        "q16": "Top-3 chứa đoạn nguồn nêu rõ nguy cơ từ vũ lực và ảnh hưởng bên ngoài; hỗ trợ trực tiếp câu trả lời về mối đe dọa từ nước ngoài.",
+        "q17": "Top-3 chứa đoạn nguồn nói mức độ tin tưởng và tuân thủ thường tương ứng với chất lượng quản trị; hỗ trợ trực tiếp câu trả lời.",
+        "q18": "C có đoạn ở hạng 3 nêu việc các nhà cải cách hướng tới nỗ lực của một nhà hiền triết thay vì hội đồng công dân. Top-3 của A và B không có bằng chứng tương đương.",
+        "q19": "Top-3 bàn về Thượng viện và một phần uy tín của chính quyền, nhưng không giải thích đầy đủ vì sao Thượng viện nhỏ, ổn định hỗ trợ vị thế đối ngoại; chỉ có liên quan một phần.",
+        "q20": "Đoạn hạng 1 nêu rõ Tổng thống bổ nhiệm đại sứ và thẩm phán Tòa án Tối cao với sự tư vấn và chấp thuận của Thượng viện; hỗ trợ trực tiếp câu trả lời, kể cả khi một số hit không trùng đơn vị gold.",
     }
     for trace in traces:
         if trace["split"] != "test":

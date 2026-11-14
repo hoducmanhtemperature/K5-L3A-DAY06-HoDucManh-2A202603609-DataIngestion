@@ -1,3 +1,3 @@
-# Superseded exploratory test set
+# Bộ test thăm dò thứ hai
 
-This second test set was reviewed during preliminary retrieval and then replaced before the final recorded run. Its questions are preserved beside the exploratory traces and metrics in `starter/results/exploratory_second/`; do not combine these scores with the final report. The final question set was frozen before its run. See `artifacts/selection_rule.md` for the dev-only strategy selection rule and test-set history.
+Bộ này đã được chạy và xem trong giai đoạn thử nghiệm, sau đó được thay thế trước lần chạy cuối. Câu hỏi được lưu cùng trace và chỉ số tại `starter/results/exploratory_second/`. Không gộp kết quả này với số liệu holdout cuối. Cách chọn cấu hình dựa trên dev được ghi trong `artifacts/selection_rule.md`.

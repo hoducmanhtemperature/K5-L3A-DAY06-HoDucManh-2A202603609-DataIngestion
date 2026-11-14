@@ -1,5 +1,6 @@
 """Fixed character windows and paragraph-aware chunks."""
 import hashlib
+import re
 from .models import Chunk, DocumentPage
 
 
@@ -26,8 +27,40 @@ def fixed_size(page: DocumentPage, size: int, overlap: int) -> list[Chunk]:
     return chunks
 
 
+def _sentence_units(paragraph: str, max_size: int) -> list[str]:
+    """Split an oversized paragraph at sentence ends, with balanced word-boundary fallback."""
+    raw = [part.strip() for part in re.split(r"(?<=[.!?])\s+(?=[A-Z\"“'])", paragraph) if part.strip()]
+    sentences: list[str] = []
+    for part in raw:
+        if sentences and len(sentences[-1]) < 80 and len(sentences[-1]) + len(part) + 1 <= max_size:
+            sentences[-1] += " " + part
+        else:
+            sentences.append(part)
+
+    result: list[str] = []
+    for sentence in sentences:
+        remaining = sentence
+        while len(remaining) > max_size:
+            boundary = remaining.rfind(" ", 1, max_size + 1)
+            if boundary < max_size // 2:
+                boundary = max_size
+            # Avoid leaving a tiny trailing fragment when a sentence barely exceeds the limit.
+            if len(remaining) - boundary < 100:
+                earlier = remaining.rfind(" ", 1, len(remaining) - 100)
+                if earlier >= max_size // 2:
+                    boundary = earlier
+            result.append(remaining[:boundary].strip())
+            remaining = remaining[boundary:].strip()
+        if remaining:
+            if result and len(remaining) < 40 and len(result[-1]) + len(remaining) + 1 <= max_size:
+                result[-1] += " " + remaining
+            else:
+                result.append(remaining)
+    return result
+
+
 def by_paragraph(page: DocumentPage, max_size: int) -> list[Chunk]:
-    """Pack whole paragraphs to the size limit; split only oversized paragraphs."""
+    """Pack paragraphs to the size limit; split oversized paragraphs at sentence ends."""
     if max_size <= 0:
         raise ValueError("max_size must be positive")
     paragraphs = [p.strip() for p in page.text.split("\n") if p.strip()]
@@ -36,7 +69,7 @@ def by_paragraph(page: DocumentPage, max_size: int) -> list[Chunk]:
         if len(para) <= max_size:
             units.append(para)
         else:
-            units.extend(para[i:i + max_size] for i in range(0, len(para), max_size))
+            units.extend(_sentence_units(para, max_size))
     packed: list[str] = []
     current = ""
     for unit in units:

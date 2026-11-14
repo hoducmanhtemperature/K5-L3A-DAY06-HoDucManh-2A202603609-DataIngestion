@@ -1,1 +1,3 @@
-This is the initial 20-question set. Its test questions were examined in a preliminary run, then replaced. Use `../questions.jsonl` for the final benchmark and do not report the old test scores as holdout results. The dev questions are unchanged.
+# Bộ test thăm dò ban đầu
+
+Đây là bộ 20 câu hỏi đầu tiên. Năm câu test đã được xem trong lần chạy sơ bộ, sau đó được thay thế. Dùng `../questions.jsonl` cho bộ hiện tại; không báo cáo điểm cũ như kết quả holdout. Câu hỏi dev được giữ nguyên.
