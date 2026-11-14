@@ -9,7 +9,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.chunking import by_paragraph, fixed_size
 from src.models import DocumentPage
-REVIEWER = "AI-generated audit draft; pending student review"
+REVIEWER = "Idea provided by student and paraphrase by ai"
 
 
 def main() -> None:
